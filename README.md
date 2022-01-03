@@ -40,4 +40,6 @@ Google also will give multiple business types to one business, and many were lis
 
 ### **Conclusions**
 [Nashville Businesses in Black Communities - Tableau Dashboard](https://prod-useast-b.online.tableau.com/#/site/tarynpatterson/views/NashvilleBusinessesinBlackCommunities/NashvilleBusinessesinBlackCommunities?:iid=3)
+
+![Nashville Businesses in Black Communities - Tableau Dashboard](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/NBBC_Dashboard.PNG)
 *Back to [Contents](#Contents)*
