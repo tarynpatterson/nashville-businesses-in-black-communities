@@ -7,8 +7,8 @@
 - [Data Analysis](#Data-Analysis)
 - [Challenges](#Challenges)
 - [Conclusions](#Conclusions)
-- [Use Case Scenario #1](#Use-Case-Scenario-#1)
-- [Use Case Scenario #2](#Use-Case-Scenario-#2)
+- [Use Case Scenario 1](#Use-Case-Scenario-1)
+- [Use Case Scenario 2](#Use-Case-Scenario-2)
  
 
 ### **Motivation and Questions**   
@@ -51,24 +51,29 @@ Google also will give multiple business types to one business, and many were lis
 
 *Back to [Contents](#Contents)*
 
-### **Use Case Scenario #1** 
+### **Use Case Scenario 1** 
 An auto-machanic has been primarily working out of her home garage, but is looking to expand to add a Black-owned brick and mortar location in her community. She lives in the South Antioch, Tennessee area, near census tract 156.30. She uses the dashboard "type" drop-down menu to first get an idea of where auto services are located in predominantly Black communities.
+
 ![Auto Services Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/auto%20services.PNG)
 
 She then narrows down to her own community. She finds there are 3 auto services businesses in the area. She can now do some market research on these companies to gain some insights on the operation of her own business. 
+
 ![Auto Services Search 156.30](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/auto%20services%20156.30.PNG)
 
 She knows she is going to need certain equipment for operation, and also hardware. Since she's wanting to invest in her own community, she keeps the search on census tract 156.30 and changes the search type to "equipment/supplies" and "hardware store". She notices there are multiple equipment and supplies companies in her area, but no hardware stores. She then expands her search to include all predominantly Black communities and narrows the search to "hardware" only. 
 Now she has compiled a list of equipment and hardware companies and can begin research on which will best suit her needs for her new business.
+
 ![Equipment and Services and Hardware Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/equipment%20and%20supplies%20and%20hardware%20156.30.PNG) ![Hardware Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/hardware%20stores.PNG)
 
 *Back to [Contents](#Contents)* 
 
-### **Use Case Scenario #2**
+### **Use Case Scenario 2**
 A man who lives in the Whites Creek Area (census tract 101.05) is traveling to downtown Nashville every day for work. He's wanting to change jobs to something closer to home. He uses the dashboard to see what types of businesses are in his community. 
+
 ![Businesses 101.05 Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/101.05.PNG)
 
 He notices that there are not many job options in his immediate area, so he expands his search to include two of the surrounding census tracts, tracts 101.06 and 109.03. He's able to see that the most prominant types of businesses in this area are medical services, restaurants, and grocery stores. Since he has prior experience in the medical field, he narrows his search to include only medical service companies in this area. He now has an the name and location of different medical companies close to home to start his job search. 
+
 ![Whites Creak area Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/whites%20creak%20job%20search.PNG) ![Medical Services Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/medical%20services.PNG)
 
 *Back to [Contents](#Contents)*
