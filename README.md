@@ -1,5 +1,5 @@
 # Businesses in Predominantly Black Communities in Nashville
-*Capstone Project for Part-time Data Analytics Cohort #5 program at Nashville Software School.* 
+*Capstone Project for Cohort DA5 at Nashville Software School* 
 
 ### **Contents**  
 - [Motivation](#Motivation)
