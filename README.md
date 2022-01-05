@@ -12,17 +12,18 @@
  
 
 ### **Motivation and Questions**   
-I originally started this project wanting to shed a light on black-owned businesses and the types of businesses in predominantly black communities. As I dug deeper into the data, I found out black-owned businesses make up only 7.9% of all businesses in Davidson County (https://overheardonconferencecalls.com/business/best-cities-for-black-owned-businesses/). I also came across a lot of literature about what’s being called “The Great Resignation” – people quitting their jobs and either entering new jobs/fields or going into business for themselves. I found that 4.3 million business applications were filed in 2020, which is the most that have been filed in a decade and a half. In Davidson County alone, 12,753 applications were filed, up about 18.5% from 2019. So, I thought, instead of focusing on only Black-Owned businesses in Black communities, I’d analyze data on the types of businesses in these communities and use that to create a dashboard for community members to see what types of businesses are in their communities.   
+I originally started this project wanting to shed a light on black-owned businesses and the types of businesses in predominantly black communities. As I dug deeper into the data, I found out black-owned businesses make up only 7.9% of all businesses in Davidson County (https://overheardonconferencecalls.com/business/best-cities-for-black-owned-businesses/). I also came across a lot of literature about what’s being called “The Great Resignation” – people quitting their jobs and either entering new jobs/fields or going into business for themselves. I found that 4.3 million business applications were filed in 2020, which is the most that have been filed in a decade and a half (https://www.nytimes.com/2021/08/19/business/startup-business-creation-pandemic.html). In Davidson County alone, 12,753 applications were filed, up about 18.5% from 2019 (https://www.census.gov/econ/bfs/index.html). So, I thought, instead of focusing on only Black-owned businesses in Black communities, I’d analyze data on the types of businesses in these communities and use that to create a dashboard for community members to see what types of businesses are in their communities.   
 
 *Back to [Contents](#Contents)*
 
 ### **Data Sources and Tools**   
 **Data Sources**   
-Census Data: Census Reporter. This website pulls census data from the 2019 5-year American Community Survey
+Census Data: [Census Reporter](https://censusreporter.org/data/table/?table=B02001&geo_ids=04000US47,01000US,05000US47037,140|05000US47037&primary_geo_id=05000US47037). This website pulls census data from the 2019 5-year American Community Survey
 
-Business Data: Google Places API (code heavily adopted from Nashville Food Deserts).
+Business Data: Google Places API (code heavily adopted from [Nashville Food Deserts](https://github.com/raom1/nashville-food-deserts)).
 
 **Tools**
+
 Python/Jupyter Notebooks for gathering and analysis of data
 
 Tableau for data visualization     
@@ -30,15 +31,15 @@ Tableau for data visualization
 *Back to [Contents](#Contents)*
 
 ### **Data Analysis**
-Created a Percentage of Total Population column in the census data geojson file and filtered the dataframe to only include census tracts in Davidson County with a Black population of 50% or more. 
-Obtained the length of the perimeter and centroid of each tract’s polygon and used that to get an approximate radius. I added a half mile buffer to this radius to make sure nothing got left out. 
-Used the centroid and radius for each tract and ran these through the Google Places API to get businesses information on a set different business types, created a dataframe with the info and got rid of any duplicates. 
-Performed a spatial join between the Census dataframe and the businesses dataframe to get only businesses within the tracks with a predominantly black population.
+For my analysis, I obtained a geoJSON file of the Davidson County cansus data from Census Reporter and calculated a Percentage of Total Population column. I filtered the dataframe to only include census tracts in Davidson County with a Black population of 50% or more. 
+I then used the length of the perimeter and centroid of each tract’s geometric polygon to get an approximate radius. I added a half mile buffer to this radius to make sure nothing got left out. 
+Then I used the centroid for the location and radius for each tract and ran these through the Google Places API to get business information on a set different business types (gas station, supermarket, hospital, clothing store, restaurant, bar), created a dataframe with the info and got rid of any duplicates. 
+Finally, I performed a spatial join between the census dataframe and the businesses dataframe to get only businesses within the tracks with a predominantly black population. This is the dataframe I used for my visualizations.
 
 *Back to [Contents](#Contents)*
 
 ### **Challenges**
-The main challenge I faced was categorizing the business types. The Google API will return at most 60 results per run, and you can only search for 1 business category at a time. As such, this is not an exhaustive list of all businesses in these Census tracts. 
+The main challenge I faced was categorizing the business types. The Google API will return at most 60 results per run, and you can only search for 1 business category at a time. As such, this is not an exhaustive list of all businesses in these census tracts. 
 
 Google also will give multiple business types to one business, and many were listed simply as “point of interest”, so I had to be mindful of that when cleaning and categorizing my data. 
 
@@ -49,10 +50,14 @@ Google also will give multiple business types to one business, and many were lis
 
 ![Nashville Businesses in Black Communities - Tableau Dashboard](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/NBBC_Dashboard.PNG)
 
+I was able to create the above dashboard to analyze my findings.There are also a large amount of gas stations, convenience stores, supply warehouses, bars, and music stores/studios. . It’s no surprise with Nashville being a major tourist area and medical hub that restaurants and medical services are high on the list, and the businesses in predominantly Black Communities reflect that. Someone looking for employment in these immediate communities would find ample options in these 2 fields. 
+
+I found there were not a lot of entertainment or attractions. There were also not a lot of book stores, non-profits, or other niche-market businesses. Someone wanting to invest in these communities and open a business that would stand out among the rest or not have much competition might want to look into going into these fields, or using the dashboard to find a business not yet represented in these communities. 
+
 *Back to [Contents](#Contents)*
 
 ### **Use Case Scenario 1** 
-An auto-machanic has been primarily working out of her home garage, but is looking to expand to add a Black-owned brick and mortar location in her community. She lives in the South Antioch, Tennessee area, near census tract 156.30. She uses the dashboard "type" drop-down menu to first get an idea of where auto services are located in predominantly Black communities.
+An auto machanic has been primarily working out of her home garage, but is looking to expand to add a Black-owned brick and mortar location in her community. She lives in the South Antioch, Tennessee area, near census tract 156.30. She uses the dashboard "type" drop-down menu to first get an idea of where auto services are located in predominantly Black communities.
 
 ![Auto Services Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/auto%20services.PNG)
 
@@ -72,7 +77,7 @@ A man who lives in the Whites Creek Area (census tract 101.05) is traveling to d
 
 ![Businesses 101.05 Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/101.05.PNG)
 
-He notices that there are not many job options in his immediate area, so he expands his search to include two of the surrounding census tracts, tracts 101.06 and 109.03. He's able to see that the most prominant types of businesses in this area are medical services, restaurants, and grocery stores. Since he has prior experience in the medical field, he narrows his search to include only medical service companies in this area. He now has an the name and location of different medical companies close to home to start his job search. 
+He notices that there are not many job options in his immediate area, so he expands his search to include two of the surrounding census tracts, tracts 101.06 and 109.03. He's able to see that the most prominant types of businesses in this area are medical services, restaurants, and grocery stores. Since he has prior experience in the medical field, he narrows his search to include only medical service companies in this area. He now has the name and location of different medical companies close to home to start his job search. 
 
 ![Whites Creak area Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/whites%20creak%20job%20search.PNG) ![Medical Services Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/medical%20services.PNG)
 
