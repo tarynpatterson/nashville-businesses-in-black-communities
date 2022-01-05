@@ -50,7 +50,7 @@ Google also will give multiple business types to one business, and many were lis
 
 ![Nashville Businesses in Black Communities - Tableau Dashboard](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/NBBC%20Dashboard.PNG)
 
-I was able to create the above dashboard to analyze my findings. There are also a large amount of gas stations, convenience stores, supply warehouses, bars, and music stores/studios. It’s no surprise with Nashville being a major tourist area and medical hub that restaurants and medical services are high on the list, and the businesses in predominantly Black Communities reflect that. Someone looking for employment in these immediate communities would find ample options in these 2 fields. 
+I created the above dashboard to analyze my findings. It’s no surprise with Nashville being a major tourist area and medical hub that restaurants and medical services are high on the list, and the businesses in predominantly Black Communities reflect that. There are also a large amount of gas stations, convenience stores, supply warehouses, bars, and music stores/studios. Someone looking for employment in these immediate communities would find ample options in these fields. 
 
 I found there were not a lot of entertainment or attractions. There were also not a lot of book stores, non-profits, or other niche-market businesses. Someone wanting to invest in these communities and open a business that would stand out among the rest or not have much competition might want to look into going into these fields, or using the dashboard to find a business not yet represented in these communities. 
 
