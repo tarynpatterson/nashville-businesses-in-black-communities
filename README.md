@@ -57,7 +57,7 @@ I found there were not a lot of entertainment or attractions. There were also no
 *Back to [Contents](#Contents)*
 
 ### **Use Case Scenario 1** 
-An auto machanic has been primarily working out of her home garage, but is looking to expand to add a Black-owned brick and mortar location in her community. She lives in the South Antioch, Tennessee area, near census tract 156.30. She uses the dashboard "type" drop-down menu to first get an idea of where auto services are located in predominantly Black communities.
+An auto mechanic has been primarily working out of her home garage, but is looking to expand to add a Black-owned brick and mortar location in her community. She lives in the South Antioch, Tennessee area, near census tract 156.30. She uses the dashboard "type" drop-down menu to first get an idea of where auto services are located in predominantly Black communities.
 
 ![Auto Services Search](https://github.com/tarynpatterson/nashville-businesses-in-black-communities/blob/main/images/auto%20services.PNG)
 
