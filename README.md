@@ -31,7 +31,7 @@ Tableau for data visualization
 *Back to [Contents](#Contents)*
 
 ### **Data Analysis**
-For my analysis, I obtained a geoJSON file of the Davidson County cansus data from Census Reporter and calculated a Percentage of Total Population column. I filtered the dataframe to only include census tracts in Davidson County with a Black population of 50% or more. 
+For my analysis, I obtained a geoJSON file of the Davidson County census data from Census Reporter and calculated a Percentage of Total Population column. I filtered the dataframe to only include census tracts in Davidson County with a Black population of 50% or more. 
 I then used the length of the perimeter and centroid of each tract’s geometric polygon to get an approximate radius. I added a half mile buffer to this radius to make sure nothing got left out. 
 Then I used the centroid for the location and radius for each tract and ran these through the Google Places API to get business information on a set different business types (gas station, supermarket, hospital, clothing store, restaurant, bar), created a dataframe with the info and got rid of any duplicates. 
 Finally, I performed a spatial join between the census dataframe and the businesses dataframe to get only businesses within the tracks with a predominantly black population. This is the dataframe I used for my visualizations.
